@@ -1,8 +1,6 @@
 const { Biconomy } = require("@biconomy/mexa");
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 const Web3 = require("web3");
-// const { ethers } = require("ethers");
-// const { HttpProvider } = require("@ethersproject/providers");
 
 const contractAddress = "0x09fB1d78a86E578dBD5C84844BA3fCBFB3911926";
 const contractJSON = require("./contract/TokenTest.json");
@@ -64,7 +62,6 @@ async function updateSupply(supply) {
 }
 
 async function setTrustedForwarder(address) {
-	// await biconomy.init();
 
 	const txParams = {
 		chainId: await rpc.getChainId(),
