@@ -20,8 +20,8 @@ const provider = new HDWalletProvider({
 
 const biconomy = new Biconomy(provider, {
 	apiKey: '_ILIRa_Mm.bc6242ac-ecc9-404e-b52c-2aebf4714bb9',
-	// debug: false,
-	// contractAddresses: [contractAddress]
+	debug: false,
+	contractAddresses: [contractAddress]
 });
 
 const web3 = new Web3(biconomy);
