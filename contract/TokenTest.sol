@@ -15,6 +15,13 @@ contract TokenTest is ERC20, ERC2771Recipient {
         trustedForwarder = _trustedForwarder;
     }
 
+    // Function to update the supply of the token
+   function updateSupply(uint256 supply) public {
+    // Mint the new supply to the owner
+    _mint(owner, supply);
+    }
+
+
     // function to set a message
     function setMessage(string memory _message) public {
         message = _message;
