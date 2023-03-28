@@ -45,7 +45,7 @@ const main = async () => {
   };
   // Send the signed transaction to the network
     try {
-      let txHash = await biconomy.ethersProvider.send("eth_sendTransaction", [txParams]);
+      let txHash = biconomy.provider.send("eth_sendTransaction", [txParams]);
       console.log("txHash", txHash);
       console.log("Supply has been updated.");
     } catch (error) {
